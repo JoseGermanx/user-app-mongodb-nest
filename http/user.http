@@ -1,0 +1,16 @@
+
+
+GET http://localhost:3000/user/list HTTP/1.1
+
+###
+
+POST http://localhost:3000/user/create HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "lastName": "sample",
+    "email": "jose@jose.com",
+    "password": "123456"
+
+}
