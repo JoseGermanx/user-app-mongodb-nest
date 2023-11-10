@@ -6,12 +6,12 @@ import { CreateUserDto } from './utils/create-user.dto';
 export class UserController {
     constructor(private userService: UserService) { }
 
-    @Post()
+    @Post('/create')
     async create(@Body(new ValidationPipe) user: CreateUserDto) {
         return this.userService.create(user);
     }
 
-    @Get()
+    @Get('/list')
     async findAll() {
         return this.userService.findAll();
     }
