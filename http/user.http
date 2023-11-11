@@ -21,5 +21,5 @@ PUT http://localhost:3000/user/update/654e4d2ad5a91a11698cae74 HTTP/1.1
 content-type: application/json
 
 {
-    "email": "cambio@cambio.com"
+    "role": "admin"
 }
